@@ -14,7 +14,7 @@ TMUX_POWERLINE_SEG_NOW_PLAYING_NOTE_CHAR_DEFAULT="♫"
 generate_segmentrc() {
 	read -d '' rccontents  << EORC
 # Music player to use. Can be any of {audacious, banshee, cmus, itunes, lastfm, mocp, mpd, mpd_simple, pithos, rdio, rhythmbox, spotify, spotify_wine}.
-export TMUX_POWERLINE_SEG_NOW_PLAYING_MUSIC_PLAYER=""
+export TMUX_POWERLINE_SEG_NOW_PLAYING_MUSIC_PLAYER="mpd_simple"
 # Maximum output length.
 export TMUX_POWERLINE_SEG_NOW_PLAYING_MAX_LEN="${TMUX_POWERLINE_SEG_NOW_PLAYING_MAX_LEN_DEFAULT}"
 # How to handle too long strings. Can be {trim, roll}.
@@ -23,7 +23,7 @@ export TMUX_POWERLINE_SEG_NOW_PLAYING_TRIM_METHOD="${TMUX_POWERLINE_SEG_NOW_PLAY
 export TMUX_POWERLINE_SEG_NOW_PLAYING_ROLL_SPEED="${TMUX_POWERLINE_SEG_NOW_PLAYING_ROLL_SPEED_DEFAULT}"
 
 # Hostname for MPD server in the format "[password@]host"
-export TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_HOST="${TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_HOST_DEFAULT}"
+export TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_HOST="music.rehabstudio.com"
 # Port the MPD server is running on.
 export TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_PORT="${TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_PORT_DEFAULT}"
 # Song display format for mpd_simple. See mpc(1) for delimiters.
